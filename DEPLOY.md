@@ -1,24 +1,12 @@
 # Deploy Your Portfolio Live
 
-Your messages go to **varshagowdavg819@gmail.com**. To receive them from the contact form, set up Formspree first (see Step 1).
+Messages go to **varshagowdavg819@gmail.com** via [Formsubmit.co](https://formsubmit.co) — no signup needed.
+
+**Important:** The first time someone submits the form, Formsubmit will send a confirmation email to varshagowdavg819@gmail.com. **You must click the activation link** in that email (check Spam too) for messages to start arriving.
 
 ---
 
-## Step 1: Set Up Formspree (Contact Form)
-
-1. Go to [formspree.io](https://formspree.io)
-2. Sign up (free)
-3. Click **"New Form"**
-4. Enter **varshagowdavg819@gmail.com** as the notification email
-5. Copy your Form ID (e.g. `xzpkqewn`)
-6. Open `index.html` and replace `YOUR_FORMSPREE_ID` with your Form ID:
-   ```html
-   action="https://formspree.io/f/xzpkqewn"
-   ```
-
----
-
-## Step 2: Host on GitHub Pages (Free)
+## Host on GitHub Pages (Free)
 
 1. Create a new repo on [github.com](https://github.com) (e.g. `varsha-portfolio`)
 2. Upload your files (index.html, styles.css, script.js) to the repo

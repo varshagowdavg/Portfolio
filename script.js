@@ -13,41 +13,40 @@ document.querySelectorAll('.nav-links a').forEach(link => {
   });
 });
 
-// Contact form - sends to Formspree (varshagowdavg819@gmail.com)
+// Contact form - sends to varshagowdavg819@gmail.com via Formsubmit.co
 const contactForm = document.getElementById('contactForm');
 const toast = document.getElementById('toast');
+const FORMSUBMIT_URL = 'https://formsubmit.co/ajax/varshagowdavg819@gmail.com';
 
 contactForm?.addEventListener('submit', async (e) => {
   e.preventDefault();
-  
-  const formData = new FormData(contactForm);
-  const action = contactForm.action;
-  
-  // Skip if Formspree ID not configured
-  if (action.includes('YOUR_FORMSPREE_ID')) {
-    toast?.classList.add('show');
-    contactForm.reset();
-    setTimeout(() => toast?.classList.remove('show'), 4000);
-    return;
-  }
   
   const btn = contactForm.querySelector('button[type="submit"]');
   const originalText = btn?.textContent;
   if (btn) btn.textContent = 'Sending...';
   
+  const payload = {
+    _subject: "Portfolio: New message from Let's Connect",
+    _replyto: contactForm.email.value,
+    email: contactForm.email.value,
+    message: contactForm.message.value
+  };
+  
   try {
-    const res = await fetch(action, {
+    const res = await fetch(FORMSUBMIT_URL, {
       method: 'POST',
-      body: formData,
-      headers: { 'Accept': 'application/json' }
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(payload)
     });
     
-    if (res.ok) {
+    const data = await res.json();
+    
+    if (data.success) {
       toast?.classList.add('show');
       contactForm.reset();
       setTimeout(() => toast?.classList.remove('show'), 4000);
     } else {
-      throw new Error('Failed to send');
+      throw new Error(data.message || 'Failed to send');
     }
   } catch (err) {
     toast.querySelector('span').textContent = 'Something went wrong';
