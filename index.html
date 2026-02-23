@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varsha M — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">Varsha.dev</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">tech background</div>
+        <div class="hero-content">
+            <p class="hero-tagline">Data Analytics • AI/ML • IoT • Problem Solver</p>
+            <h1 class="hero-title">Varsha M</h1>
+            <p class="hero-description">
+                Data Analytics & AI Engineer building impactful solutions.<br>
+                From sign language recognition to IoT environmental monitoring — I focus on real-world applications, clean implementation, and continuous improvement.
+            </p>
+            <div class="hero-cta">
+                <a href="https://github.com/varshagowdavg" target="_blank" rel="noopener" class="btn btn-primary">View GitHub</a>
+                <a href="#projects" class="btn btn-secondary">See Projects</a>
+                <a href="#contact" class="btn btn-outline">Hire / Connect</a>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat">
+                <span class="stat-number">4+</span>
+                <span class="stat-label">Academic Projects</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">2</span>
+                <span class="stat-label">Work Experiences</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">9+</span>
+                <span class="stat-label">Core Skills</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- What I Build -->
+    <section class="what-i-build">
+        <h2>What I Build</h2>
+        <ul>
+            <li>AI/ML & Data Analytics Solutions</li>
+            <li>IoT & Embedded Systems</li>
+            <li>Computer Vision Applications</li>
+            <li>Real-world Problem Solving</li>
+        </ul>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>
+            I am a Bachelor of Engineering student in Information Science at Acharya Institute of Technology, Bangalore, with a diploma in Computer Science and Engineering from Ramaiah Polytechnic. I'm currently undergoing professional training in Data Analytics with AI at Incanto Dynamics, and have completed an AI/ML internship at AIROBOSOFT.
+        </p>
+        <p>
+            Seeking challenging opportunities to apply my skills in problem-solving, teamwork, and continuous improvement. I enjoy transforming complex problems into elegant solutions and contributing to positive work environments.
+        </p>
+        
+        <h3>Education</h3>
+        <div class="education">
+            <div class="edu-item">
+                <strong>BE — Information Science</strong><br>
+                Acharya Institute of Technology, Bangalore (2023–2026) • 70%
+            </div>
+            <div class="edu-item">
+                <strong>Diploma — Computer Science & Engineering</strong><br>
+                Ramaiah Polytechnic University, Bangalore (2020–2023) • 75.80%
+            </div>
+        </div>
+
+        <h3>Experience</h3>
+        <div class="experience">
+            <div class="exp-item">
+                <strong>Incanto Dynamics Pvt. Ltd</strong> — Bangalore<br>
+                <em>02/2026 – Present</em><br>
+                Professional training in Data Analytics with AI. Working with Python, SQL, Excel on real-world datasets for cleaning, visualization, and insights. Applying ML models for prediction and analysis.
+            </div>
+            <div class="exp-item">
+                <strong>AIROBOSOFT</strong> — Bangalore (Internship)<br>
+                <em>02/2023 – 06/2023</em><br>
+                Developed AI-based software solutions. Designed intelligent systems using Python and ML. Analyzed datasets, applied preprocessing techniques, and improved system performance.
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section id="projects" class="projects">
+        <h2>Featured Projects</h2>
+        
+        <div class="project-grid">
+            <article class="project-card">
+                <h3>Bidirectional Indian Sign Language Recognition</h3>
+                <p>Built a machine learning model to recognize and translate Indian sign language gestures. Supports two-way communication between hearing and hearing-impaired users.</p>
+                <div class="project-tags">Python • ML • Sign Language</div>
+            </article>
+            <article class="project-card">
+                <h3>Atmospheric Gas Analyzer</h3>
+                <p>IoT-based system to monitor and analyze harmful gases in the environment. Enables pollution detection and safety through real-time monitoring.</p>
+                <div class="project-tags">IoT • Arduino • Sensors</div>
+            </article>
+            <article class="project-card">
+                <h3>Automatic Car Parking System</h3>
+                <p>Automated system to park vehicles efficiently using sensors and control logic. Reduces human effort and optimizes parking space utilization.</p>
+                <div class="project-tags">Embedded • Sensors • Control Logic</div>
+            </article>
+            <article class="project-card">
+                <h3>Eye Detection System</h3>
+                <p>Computer vision system using Python and OpenCV to detect eye movements. Useful for fatigue detection and human-computer interaction.</p>
+                <div class="project-tags">Python • OpenCV • Computer Vision</div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section id="skills" class="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-showcase">
+            <div class="skill-card" data-skill="Java">
+                <span class="skill-icon">☕</span>
+                <span class="skill-name">Java</span>
+            </div>
+            <div class="skill-card" data-skill="Python">
+                <span class="skill-icon">🐍</span>
+                <span class="skill-name">Python</span>
+            </div>
+            <div class="skill-card" data-skill="SQL">
+                <span class="skill-icon">🗃️</span>
+                <span class="skill-name">SQL</span>
+            </div>
+            <div class="skill-card" data-skill="MongoDB">
+                <span class="skill-icon">🍃</span>
+                <span class="skill-name">MongoDB</span>
+            </div>
+            <div class="skill-card" data-skill="HTML">
+                <span class="skill-icon">📄</span>
+                <span class="skill-name">HTML</span>
+            </div>
+            <div class="skill-card" data-skill="CSS">
+                <span class="skill-icon">🎨</span>
+                <span class="skill-name">CSS</span>
+            </div>
+            <div class="skill-card" data-skill="Excel">
+                <span class="skill-icon">📊</span>
+                <span class="skill-name">Excel</span>
+            </div>
+        </div>
+        <h3>Certifications</h3>
+        <div class="cert-badges">
+            <span class="cert-badge">Advance Java (Infosys)</span>
+            <span class="cert-badge">Cloud Computing & Security (NPTEL)</span>
+            <span class="cert-badge">Unix Linux OS (Infosys)</span>
+        </div>
+        <ul class="cert-list">
+            <li>Introduction to Unix</li>
+            <li>Unix Linux OS — Unix Commands in Details</li>
+            <li>Unix Performance and Directories (Infosys)</li>
+        </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h2>Let's Connect</h2>
+        <p>Have an opportunity or collaboration in mind? Send me a message — it will land directly at <strong>varshagowdavg819@gmail.com</strong>.</p>
+        <div class="contact-info">
+            <a href="mailto:varshagowdavg819@gmail.com">varshagowdavg819@gmail.com</a>
+            <a href="tel:+916364031085">+91 6364031085</a>
+            <span>Malleswaram, Bangalore, India</span>
+        </div>
+        <div class="contact-links">
+            <a href="https://github.com/varshagowdavg" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+            <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+        <!-- Messages go to varshagowdavg819@gmail.com via Formspree — Replace YOUR_FORMSPREE_ID after creating a form at formspree.io -->
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+            <input type="email" name="email" placeholder="Your email" required>
+            <textarea name="message" rows="4" placeholder="Your message..." required></textarea>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Success Toast -->
+    <div class="toast" id="toast">
+        <span>Thank You! 🙌</span>
+        <p>Your message has been sent successfully. I'll get back to you as soon as possible.</p>
+    </div>
+
+    <footer>
+        <p>© 2026 Varsha M • Built with passion.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
