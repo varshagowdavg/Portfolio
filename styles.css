@@ -9,6 +9,8 @@
     --accent: #58a6ff;
     --accent-hover: #79b8ff;
     --success: #3fb950;
+    --green: #22c55e;
+    --teal: #14b8a6;
     --font-sans: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
     --font-mono: 'JetBrains Mono', monospace;
     --radius: 8px;
@@ -381,31 +383,35 @@ section h3 {
 }
 
 /* Contact */
-.contact-info {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    margin-bottom: 1.5rem;
+.contact-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
 }
 
-.contact-info a, .contact-info span {
+.contact-title .accent-text {
+    color: var(--green);
+}
+
+.contact-intro {
     color: var(--text-muted);
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    max-width: 480px;
 }
 
-.contact-links {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 2rem;
+.contact-form {
+    max-width: 480px;
 }
 
 .contact-form input,
 .contact-form textarea {
     width: 100%;
-    padding: 1rem;
+    padding: 1rem 1.25rem;
     margin-bottom: 1rem;
-    background: var(--bg-card);
+    background: var(--bg-elevated);
     border: 1px solid var(--border);
-    border-radius: var(--radius);
+    border-radius: 12px;
     color: var(--text);
     font-family: var(--font-sans);
     font-size: 1rem;
@@ -413,6 +419,7 @@ section h3 {
 
 .contact-form textarea {
     resize: vertical;
+    min-height: 120px;
 }
 
 .contact-form input::placeholder,
@@ -423,13 +430,42 @@ section h3 {
 .contact-form input:focus,
 .contact-form textarea:focus {
     outline: none;
-    border-color: var(--accent);
+    border-color: var(--green);
 }
 
-.form-note {
-    margin-top: 1rem;
-    font-size: 0.85rem;
-    color: var(--text-muted);
+.btn-gradient {
+    width: 100%;
+    padding: 0.9rem 1.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(90deg, var(--green) 0%, var(--teal) 100%);
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.btn-gradient:hover {
+    opacity: 0.95;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.contact-icons a {
+    color: var(--text);
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.contact-icons a:hover {
+    opacity: 1;
+    color: var(--text);
 }
 
 /* Toast */
