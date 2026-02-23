@@ -193,12 +193,16 @@
             <a href="https://github.com/varshagowdavg" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
             <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
         </div>
-        <!-- Messages go to varshagowdavg819@gmail.com via Formsubmit.co -->
-        <form class="contact-form" id="contactForm">
+        <!-- Messages go to varshagowdavg819@gmail.com via Formsubmit (native submit for reliable delivery) -->
+        <form class="contact-form" id="contactForm" action="https://formsubmit.co/varshagowdavg819@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="Portfolio: New message from visitor">
+            <input type="hidden" name="_next" value="https://varshagowdavg.github.io/Portfolio/#contact">
+            <input type="hidden" name="_captcha" value="false">
             <input type="email" name="email" placeholder="Your email" required>
             <textarea name="message" rows="4" placeholder="Your message..." required></textarea>
             <button type="submit" class="btn btn-primary">Send Message</button>
         </form>
+        <p class="form-note">First time? Submit once — check your inbox (and spam) for Formsubmit's activation link. Click it to start receiving messages.</p>
     </section>
 
     <!-- Success Toast -->

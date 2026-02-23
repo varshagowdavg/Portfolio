@@ -1,8 +1,10 @@
 # Deploy Your Portfolio Live
 
-Messages go to **varshagowdavg819@gmail.com** via [Formsubmit.co](https://formsubmit.co) — no signup needed.
+Messages go to **varshagowdavg819@gmail.com** via [Formsubmit.co](https://formsubmit.co).
 
-**Important:** The first time someone submits the form, Formsubmit will send a confirmation email to varshagowdavg819@gmail.com. **You must click the activation link** in that email (check Spam too) for messages to start arriving.
+**To activate:** Submit the form once on your live site. You'll be redirected to Formsubmit's page. Check varshagowdavg819@gmail.com (and Spam) for an activation email — click the link. After that, all messages will reach your inbox.
+
+**If still no emails:** Try [Formspree](https://formspree.io) — sign up, create a form with your email, copy the form ID, and replace the form's `action` in index.html with `https://formspree.io/f/YOUR_FORM_ID`.
 
 ---
 

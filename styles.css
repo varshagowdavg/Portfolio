@@ -426,6 +426,12 @@ section h3 {
     border-color: var(--accent);
 }
 
+.form-note {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
 /* Toast */
 .toast {
     position: fixed;
