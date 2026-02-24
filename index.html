@@ -26,68 +26,75 @@
         </button>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section - two column layout -->
     <section id="home" class="hero">
         <div class="hero-bg">tech background</div>
-        <div class="hero-content">
-            <p class="hero-tagline">Data Analytics • AI/ML • IoT • Problem Solver</p>
-            <h1 class="hero-title">Varsha M</h1>
-            <p class="hero-description">
-                Data Analytics & AI Engineer building impactful solutions.<br>
-                From sign language recognition to IoT environmental monitoring — I focus on real-world applications, clean implementation, and continuous improvement.
-            </p>
-            <div class="hero-cta">
-                <a href="https://github.com/varshagowdavg" target="_blank" rel="noopener" class="btn btn-primary">View GitHub</a>
-                <a href="#projects" class="btn btn-secondary">See Projects</a>
-                <a href="#contact" class="btn btn-outline">Hire / Connect</a>
+        <div class="hero-grid">
+            <div class="hero-left">
+                <p class="hero-tagline">Data Analytics • AI/ML • IoT • Problem Solver</p>
+                <h1 class="hero-title">Varsha M</h1>
+                <p class="hero-description">
+                    Data Analytics & AI Engineer building impactful solutions.
+                    From sign language recognition to IoT environmental monitoring — I focus on real-world applications, clean implementation, and continuous improvement.
+                </p>
+                <div class="hero-cta">
+                    <a href="https://github.com/varshagowdavg" target="_blank" rel="noopener" class="btn btn-primary">View GitHub</a>
+                    <a href="#projects" class="btn btn-secondary">See Projects</a>
+                    <a href="#contact" class="btn btn-outline">Hire / Connect</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">4+</span>
+                        <span class="stat-label">Academic Projects</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">2</span>
+                        <span class="stat-label">Work Experiences</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">9+</span>
+                        <span class="stat-label">Core Skills</span>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="hero-stats">
-            <div class="stat">
-                <span class="stat-number">4+</span>
-                <span class="stat-label">Academic Projects</span>
-            </div>
-            <div class="stat">
-                <span class="stat-number">2</span>
-                <span class="stat-label">Work Experiences</span>
-            </div>
-            <div class="stat">
-                <span class="stat-number">9+</span>
-                <span class="stat-label">Core Skills</span>
+            <div class="hero-right">
+                <div class="what-i-build-card">
+                    <h2>What I Build</h2>
+                    <ul>
+                        <li>AI/ML & Data Analytics Solutions</li>
+                        <li>IoT & Embedded Systems</li>
+                        <li>Computer Vision Applications</li>
+                        <li>Real-world Problem Solving</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- What I Build -->
-    <section class="what-i-build">
-        <h2>What I Build</h2>
-        <ul>
-            <li>AI/ML & Data Analytics Solutions</li>
-            <li>IoT & Embedded Systems</li>
-            <li>Computer Vision Applications</li>
-            <li>Real-world Problem Solving</li>
-        </ul>
-    </section>
-
-    <!-- About Me -->
+    <!-- About Me - two column layout -->
     <section id="about" class="about">
-        <h2>About Me</h2>
-        <p>
-            I am a Bachelor of Engineering student in Information Science at Acharya Institute of Technology, Bangalore, with a diploma in Computer Science and Engineering from Ramaiah Polytechnic. I'm currently undergoing professional training in Data Analytics with AI at Incanto Dynamics, and have completed an AI/ML internship at AIROBOSOFT.
-        </p>
-        <p>
-            Seeking challenging opportunities to apply my skills in problem-solving, teamwork, and continuous improvement. I enjoy transforming complex problems into elegant solutions and contributing to positive work environments.
-        </p>
-        
-        <h3>Education</h3>
-        <div class="education">
-            <div class="edu-item">
-                <strong>BE — Information Science</strong><br>
-                Acharya Institute of Technology, Bangalore (2023–2026) • 70%
+        <div class="about-grid">
+            <div class="about-left">
+                <h2>About Me</h2>
+                <p>
+                    I am a Bachelor of Engineering student in Information Science at Acharya Institute of Technology, Bangalore, with a diploma in Computer Science and Engineering from Ramaiah Polytechnic. I'm currently undergoing professional training in Data Analytics with AI at Incanto Dynamics, and have completed an AI/ML internship at AIROBOSOFT.
+                </p>
+                <p>
+                    Seeking challenging opportunities to apply my skills in problem-solving, teamwork, and continuous improvement. I enjoy transforming complex problems into elegant solutions and contributing to positive work environments.
+                </p>
             </div>
-            <div class="edu-item">
-                <strong>Diploma — Computer Science & Engineering</strong><br>
-                Ramaiah Polytechnic University, Bangalore (2020–2023) • 75.80%
+            <div class="about-right">
+                <div class="education-card">
+                    <h3>Education</h3>
+                    <div class="edu-item">
+                        <strong>BE — Information Science</strong><br>
+                        Acharya Institute of Technology, Bangalore (2023–2026) • 70%
+                    </div>
+                    <div class="edu-item">
+                        <strong>Diploma — Computer Science & Engineering</strong><br>
+                        Ramaiah Polytechnic University, Bangalore (2020–2023) • 75.80%
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -108,7 +115,7 @@
 
     <!-- Featured Projects -->
     <section id="projects" class="projects">
-        <h2>Featured Projects</h2>
+        <h2 class="section-title-accent">Featured <span>Projects</span></h2>
         
         <div class="project-grid">
             <article class="project-card">
@@ -136,7 +143,7 @@
 
     <!-- Technical Skills -->
     <section id="skills" class="skills">
-        <h2>Technical Skills</h2>
+        <h2 class="section-title-accent">Technical <span>Skills</span></h2>
         <div class="skills-showcase">
             <div class="skill-card" data-skill="Java">
                 <span class="skill-icon">☕</span>
@@ -182,7 +189,7 @@
 
     <!-- Contact -->
     <section id="contact" class="contact">
-        <h2 class="contact-title">Let's <span class="accent-text">Connect</span></h2>
+        <h2 class="contact-title">Let's <span class="accent-gradient">Connect</span></h2>
         <p class="contact-intro">Have an opportunity or collaboration in mind? Send me a message — it will land directly in my inbox.</p>
         <form class="contact-form" id="contactForm" action="https://formsubmit.co/varshagowdavg819@gmail.com" method="POST">
             <input type="hidden" name="_subject" value="Portfolio: New message from visitor">
