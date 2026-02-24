@@ -164,12 +164,11 @@ main, section, nav, footer { position: relative; z-index: 1; }
     line-height: 1.1;
 }
 
-.hero-title .name-teal {
-    color: #00e6cb;
-}
-
-.hero-title .name-blue {
-    color: #80d0ff;
+.hero-title.name-gradient {
+    background: linear-gradient(90deg, #23E189 0%, #00d4aa 25%, #00b8d4 50%, #7c9cff 75%, #a78bfa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .hero-description {
@@ -193,7 +192,7 @@ main, section, nav, footer { position: relative; z-index: 1; }
 }
 
 .what-i-build-card {
-    background: var(--bg-card);
+    background: rgba(28, 30, 43, 0.8);
     border: 1px solid var(--border);
     border-radius: var(--radius);
     padding: 2rem;
@@ -205,6 +204,8 @@ main, section, nav, footer { position: relative; z-index: 1; }
 .what-i-build-card h2 {
     font-size: 1.5rem;
     margin: 0 0 1.5rem;
+    color: #fff;
+    font-weight: 700;
 }
 
 .what-i-build-card ul {
@@ -215,21 +216,27 @@ main, section, nav, footer { position: relative; z-index: 1; }
 
 .what-i-build-card li {
     padding: 0.75rem 0;
-    border-bottom: 1px solid var(--border);
-    color: var(--text-muted);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    color: #fff;
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 1rem;
 }
 
 .what-i-build-card li:last-child {
     border-bottom: none;
 }
 
-.what-i-build-card li::before {
-    content: '▸';
-    color: var(--accent);
-    font-weight: bold;
+.wib-icon {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    color: #a78bfa;
+}
+
+.wib-icon svg {
+    width: 100%;
+    height: 100%;
 }
 
 /* Buttons */
@@ -330,7 +337,7 @@ section h3 {
 }
 
 .skills .section-title-accent span {
-    color: var(--teal);
+    color: #00E676;
 }
 
 /* About - two column */
